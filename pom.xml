@@ -21,6 +21,7 @@
     <properties>
         <java.version>11</java.version>
         <start-class>com.springframwork.com.springframwork.springpet.SpringpetApplication</start-class>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
     </properties>
 
 
