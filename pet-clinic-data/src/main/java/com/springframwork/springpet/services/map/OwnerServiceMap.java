@@ -2,10 +2,12 @@ package com.springframwork.springpet.services.map;
 
 import com.springframwork.springpet.model.Owner;
 import com.springframwork.springpet.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstrackMapService<Owner, Long> implements OwnerService {
+@Service
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -19,7 +21,7 @@ public class OwnerServiceMap extends AbstrackMapService<Owner, Long> implements 
 
     @Override
     public Owner save(Owner object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
